@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+    initial-scale=1.0">
+    <title>Open Trip to South Korean with Dirgantara Asian Trip</title>
+    <style> 
+        body {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        table {
+            border-collapse:collapse;
+            font-family: sans-serif;
+            width: 800px;
+        }
+        
+        th,td{
+            border: 1px solid black;
+            padding: 8px 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        thead th {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead {
+            background-color: hotpink;
+            color: rgb(0, 0, 0);
+        }
+
+        td:nth-child(1),th:nth-child(1) {
+            width: 800px;
+        }
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+
+
+    </head>
+    <body>
+
+    <!--Navigation-->
+      <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-name">
+                <h2>Dirgantara Trip</h2>
+            </div>
+            <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#profile" class="nav-link">Our Profile</a></li>
+            <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+            <li class="nav-item"><a href="#booknow" class="nav-link">Book Now</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+<!--Home Section-->
+    <section id="home" class="hero">
+    <div class="hero-content">
+    <div class="hero-text">
+      <h1>Hi, Welcome to Dirgantara Trip</h1>
+      <p>Dirgantara, satu-satunya yang akan mendampingimu melakukan perjalanan ke tempat impian dengan pengalaman tak terlupakan.</p>
+      <button class="cta-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
+        Hubungi Kami
+      </button>
+    </div>
+    <div class="hero-image">
+      <img src="logodirg.png" alt="Logo Dirgantara" />
+    </div>
+    </div>
+    </section>
+
+    
+    <!--Profile Section-->
+    <section id="profile" class="profile">
+        <div class="profile-content">
+            <div class="profile-text">
+                <h1>Profile</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+        </div>
+
+        <div class="profile-image">
+            <img src="https://blog.airpaz.com/wp-content/uploads/jinhae-korea.jpg" alt="Open Trip South Korean">
+      
+        </div>
+    </section>
+       
+    
+    <!--Menu Section-->
+    <section id="menu" class="menu">
+        <div class="menu">
+            <div class="menu-text">
+                <h1>Menu</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="menu-dua">
+                <p>Berikut merupakan pilihan menu di Dirgantara Asian Trip:</p>
+            </div>
+            <div class="menu-table">
+            <table>
+              <colgroup>
+                <col style="width:25%;">
+                <col style="width:45%">
+                <col style="width:10%">
+                <col style="width:15%">
+                <col style="width:20%;">
+            
+            </colgroup>
+            <thead>
+            <tr style="background-color: hotpink; color: rgb(0, 0, 0);">
+                <th>Jenis</th>
+                <th>Lokasi Tujuan</th>
+                <th>Kuota</th>
+                <th>Waktu</th>
+                <th>Harga</th>
+            </tr>
+            </thead>
+            
+            <tbody>
+            <tr>
+                <td>Open Trip</td>
+                <td>Kamboja</td>
+                <td>100</td>
+                <td>1D1N</td>
+                <td>Rp500.000</td>
+            </tr>
+    
+            <tr>
+                <td>Private Trip</td>
+                <td>Korea Selatan</td>
+                <td>20</td>
+                <td>5D1N</td>
+                <td>Rp20.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Private Trip</td>
+                <td>Jepang</td>
+                <td>20</td>
+                <td>5D1N</td>
+                <td>Rp20.000.000</td>
+            </tr>
+            
+            <tr>
+                <td>Private Trip</td>
+                <td>Thailand</td>
+                <td>20</td>
+                <td>5D1N</td>
+                <td>Rp10.000.000</td>
+            </tr>
+
+            <tr>
+                <td>Private Trip</td>
+                <td>Vietnam</td>
+                <td>20</td>
+                <td>5D1N</td>
+                <td>Rp15.000.000</td>
+            </tr>
+
+            </tbody>
+            </table>
+            </div>
+        </div>
+    </section>
+
+    
+    <!--Booking Section-->   
+    <section id="book-now" class="book-now">
+        <div class="book-now">
+            <div class="book-now-text">
+                <h1>Book Now</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="cara-booking">
+                <p>Berikut merupakan cara booking tiket di Dirgantara Asian Trip:</p>
+            </div>
+            <div class="tutorial-booking">
+                <p>
+                    <ol>
+                        <li>Buka website resmi Dirgantara Asian Trip di www.dirgantarasiantrip.com</li>
+                        <li>Scroll ke bagian 'How to Book' untuk melakukan booking</li>
+                        <li>Isi formulir pemesanan untuk melakukan booking</li>
+                        <li>Pastikan pilihan trip, dan lokasi sudah sesuai dengan keinginan</li>
+                        <li>Klik 'Submit'</li>
+                        <li>Website akan otomatis masuk ke menu pembayaran, segera lakukan pembayaran dalam waktu 24 jam</li>
+                        <li>Konfirmasi ke contact yang tertera di bagian 'Contact Us' untuk melakukan konfirmasi </li>
+                    </ol>
+                </p>
+            </div>
+            
+            <div class="isi-pemesanan">
+                <p>Anda dapat mengisi formulir di bawah ini untuk melakukan pemesanan.</p>
+                <form id="bookingForm" method="POST" class="vertical-form">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="nama" required>
+
+                <label for="domisili">Domisili</label>
+                <input type="text" id="domisili" name="domisili" required>
+
+                <label for="trip">Pilihan Trip</label>
+                <select id="trip" name="trip" required>
+                    <option value="">-- Pilih Trip --</option>
+                    <option value="Kamboja">Kamboja</option>
+                    <option value="Korea Selatan">Korea Selatan</option>
+                    <option value="Jepang">Jepang</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                </select>
+
+                <button type="submit">Submit</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+      
+
+    
+    <!--Contact Section-->
+    <section id="contact" class="contact">
+        <div class="contact">
+            <div class="contact-text">
+                <h1>Contact Us</h1>
+                <p>
+                    <ul>
+                        <li>instagram.com</li>
+                        <li>drigantarali120@gmail.com</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('bookingForm');
+
+    if (!form) {
+      console.error('⚠️ Form dengan id "bookingForm" tidak ditemukan.');
+      return;
+    }
+
+    const tripPrices = {
+      "Kamboja": 500000,
+      "Korea Selatan": 20000000,
+      "Jepang": 20000000,
+      "Thailand": 10000000,
+      "Vietnam": 15000000
+    };
+
+  form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const domisili = document.getElementById('domisili').value;
+    const trip = document.getElementById('trip').value;
+    const price = tripPrices[trip] || 0;
+
+    try {
+      const response = await fetch('http://localhost:3000/api/booking', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, domisili, trip })
+      });
+
+      if (!response.ok) {
+        throw new Error('Gagal kirim data ke server');
+      }
+
+      // 🟢 Pindah ke payment.html setelah berhasil
+      window.location.href = `payment.html?trip=${encodeURIComponent(trip)}&price=${price}`;
+    } catch (err) {
+      console.error("Gagal kirim:", err);
+      alert("Terjadi kesalahan saat mengirim. Silakan coba lagi.");
+    }
+  });
+});
+</script>
+
+
+    </body>
+</html>
+

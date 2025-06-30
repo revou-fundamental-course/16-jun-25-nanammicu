@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+  <title>Instruksi Pembayaran</title>
+  <link rel="stylepaymentsheet" href="stylepayment.css">
+</head>
+
+<body>
+  <h1>Instruksi Pembayaran</h1>
+  <div id="payment-instructions"></div>
+
+  <h2>Upload Bukti Pembayaran</h2>
+  <form id="proofForm">
+    <input type="file" id="proof" accept="image/*,.pdf" required>
+    <button type="submit">Kirim Bukti</button>
+  </form>
+
+  <script>
+    // Ambil data trip & harga dari URL
+    const params = new URLSearchParams(window.location.search);
+    const trip = params.get('trip');
+    const price = params.get('price');
+
+    document.getElementById('payment-instructions').innerHTML = `
+      <p>Terima kasih telah melakukan pemesanan untuk trip <strong>${trip}</strong>.</p>
+      <p>Silakan lakukan pembayaran dengan melakukan transfer sebesar <strong>Rp ${Number(price).toLocaleString()}</strong> ke salah satu virtual account berikut:</p>
+      <ul>
+        <li>Bank MSI: 110011101011</li>
+        <li>Bank Apa Aja: 110101110011</li>
+        <li>Bank Aladin: 101101101101</li>
+      </ul>
+      <p>Harap melakukan pembayaran maksimal 24 jam setelah pemesanan!</p>
+    `;
+
+    document.getElementById('proofForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Di sini bisa kirim file ke server atau Google Drive API
+      // Contoh: langsung redirect saja
+      window.location.href = "success.html";
+    });
+  </script>
+</body>
+</html>
